@@ -5,7 +5,8 @@ import AnimatedButton from "./AnimatedButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import type { Swiper as SwiperType } from 'swiper';
-import "swiper/swiper-bundle.css";
+import "swiper/css";
+import "swiper/css/bundle";
 import Image from "next/image";
 
 interface SlideContent {
@@ -127,34 +128,35 @@ const Hero = () => {
             >
               {slide.heading && (
                 <h1
-                  className="text-5xl md:text-[70px] font-bold mb-2 head-font max-w-[700px]"
+                  className="text-4xl md:text-[70px] font-bold mb-2 head-font max-w-[700px]"
                   dangerouslySetInnerHTML={{ __html: slide.heading }}
                 />
               )}
               {slide.description1 && (
                 <div className="my-4 lg:my-2 max-w-[540px]">
-                  <p className="text-lg md:text-xl my-2 font-light2 max-w-lg">
+                  <p className="text-md md:text-xl my-2 font-light2 max-w-lg">
                     {slide.description1}
                   </p>
                 </div>
               )}
               {slide.contactLink && (
                 <div className="flex flex-wrap gap-4 mt-1 max-w-[540px]">
-                  <AnimatedButton
-                    href={slide.contactLink}
-                    label="Let's Connect"
-                    className="w-fit"
-                  />
+                  
                   <AnimatedButton
                     href={slide.contactLink}
                     label="More About Us"
                     className="w-fit transparent-btn"
                   />
+                  <AnimatedButton
+                    href={slide.contactLink}
+                    label="Let's Connect"
+                    className="w-fit"
+                  />
                 </div>
               )}
 
               {/* Bottom progress-style pagination lines */}
-              <div className="absolute right-8 xl:right-0 bottom-[20px] lg:bottom-[90px] flex gap-3 z-20">
+              <div className="absolute right-8 xl:right-[30px] bottom-[20px] lg:bottom-[90px] flex gap-3 z-20">
                 {slidesContent.map((_, i) => {
                   const isActive = i === activeIndex;
                   return (

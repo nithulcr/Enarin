@@ -84,7 +84,7 @@ const Services = () => {
                     transition={{ duration: 0.5 }} className="heading flex flex-col max-w-[400px] text-left  mb-14">
 
 
-                    <div className="flex  gap-2 text-site mb-3 uppercase text-sm  md:justify-start">
+                    <div className="flex  gap-2 text-site mb-3 uppercase text-sm justify-center  md:justify-start">
                         <SignatureIcon width={20} height={20} />
 
                         Work Smarter. Achieve More

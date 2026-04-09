@@ -51,7 +51,7 @@ export default function WhoWeAre() {
     >
       {/* pinned wrapper with 80px top padding */}
       <div ref={pinRef} className="pt-16">
-        <div className="max-w-[1360px] mx-auto px-6">
+        <div className="max-w-[1300px] mx-auto px-6">
           <div className="heading flex flex-col items-center max-w-[900px] mx-auto mb-10">
             <div className="flex items-center gap-2 text-site  uppercase text-sm">
               <SignatureIcon width={20} height={20} />

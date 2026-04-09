@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CustomCursor from "./components/CustomCursor";
 
 import { Toaster } from 'react-hot-toast';
 import SmoothScrollWrapper from "./SmoothScrollWrapper";
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased">
 
-    
+    <CustomCursor />
         <SmoothScrollWrapper>
           {children}
           <Toaster />

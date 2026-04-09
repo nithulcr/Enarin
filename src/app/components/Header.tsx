@@ -88,7 +88,7 @@ export default function Header() {
                 <div className="w-full bg-[var(--siteColor)] hidden min-[990px]:block">
                     <div className="text-white grid grid-cols-2 items-center text-sm max-w-[1360px] mx-auto">
                         <div className="h-full">
-                            <div className="h-full max-w-[660px] flex items-center space-x-6 top-header-left relative ml-auto px-6 py-2">
+                            <div className="h-full max-w-[660px] flex items-center space-x-6 top-header-left relative px-6 py-2">
                                 <p className="font-light">Are You Ready to Become an Affiliate Partner?</p>
                                 <a href="#" className="flex items-center space-x-2 font-semibold pr-5">
                                     Contact Us

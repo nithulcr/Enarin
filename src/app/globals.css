@@ -34,6 +34,39 @@ html {
   scroll-behavior: smooth;
 
 }
+
+.OutlineCursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  margin-left: -15px;
+  margin-top: -15px;
+  border-radius: 50%;
+  background:var(--siteColor3);
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+  animation: pulseCursor 2s ease-in-out infinite;
+}
+
+@keyframes pulseCursor {
+  0% {
+
+    opacity: 1;
+  }
+
+  50% {
+
+    opacity: 0.4;
+  }
+
+  100% {
+
+    opacity: 1;
+  }
+}
+
 .megamenu-active-tab{
   color: var(--siteColor);
   background: var(--background2);
@@ -263,10 +296,16 @@ height:100%;
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--siteColor);
+  background-color: white;
   transition: .3s;
 }
+.bg-nav-cover, .header-menu-open{
+   .menu-item::before {
 
+  background-color: var(--siteColor);
+
+}
+}
 .index-page  .ph-icon svg path{
   fill:white!important;
 }
@@ -309,7 +348,7 @@ height:100%;
 }
 
 
-.hero-cover::before {
+/* .hero-cover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -320,7 +359,7 @@ height:100%;
   background-size: cover;
   z-index: 1;
 
-}
+} */
 
 
 .hero2:before {

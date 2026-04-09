@@ -28,7 +28,7 @@ const ServiceCard = ({
                         {title}
                     </h5>
                 </div>
-                <p className="text-lg duration-500  ease-in-out overflow-hidden pt-2 font-light md:text-right max-w-[500px] md:ml-auto">
+                <p className="md:text-lg duration-500 pl-7 lg:pl-0 ease-in-out overflow-hidden pt-2 font-light2 md:text-right max-w-[500px] md:ml-auto">
                     {description}
                 </p>
             </div>
@@ -122,7 +122,7 @@ const Services = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
-                    className="heading flex items-center justify-between  font-light text-white text-left mb-14"
+                    className="heading md:flex items-center justify-between  font-light text-white text-left mb-14"
                 >
                     <div className=" max-w-[460px]">
                         <div className="flex gap-2 mb-3 uppercase  text-sm md:justify-start white-icon">

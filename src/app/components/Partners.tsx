@@ -2,9 +2,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/pagination";
+
 import AnimatedButton from "./AnimatedButton";
 
 
@@ -59,7 +57,7 @@ const Partners = () => {
     <section className="py-14 lg:py-24 text-[var(--foreground)]">
       <div className="max-w-[1320px] mx-auto px-6 flex  flex-col items-start  gap-5 justify-between mb-10">
         <div className="w-full lg:flex justify-between gap-4 items-center">
-          <h2 className="text-2xl lg:text-[40px] font-medium max-w-[560px]">Empowering Success with
+          <h2 className="text-3xl lg:text-[46px] font-medium max-w-[560px] mb-5 md:mb-0">Empowering Success with
             Top One&apos;s Expertise.</h2>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             {/* <p className="max-w-[560px] ">

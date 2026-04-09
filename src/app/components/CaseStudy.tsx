@@ -10,26 +10,26 @@ import AnimatedButton from "../components/AnimatedButton";
 const caseStudies = [
     {
         title: "Sports infrastructure & Facilities",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-        image: "/banner1.webp",
+        description: "Lorem Ipsum is simply dummy text of the printing. ",
+        image: "/img2.png",
         video: "/video.mp4",
     },
     {
         title: "Old age homes",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-        image: "/banner2.webp",
+        description: "Lorem Ipsum is simply dummy text of the printing. ",
+        image: "/img3.webp",
         video: "/video.mp4",
     },
     {
         title: "Training Centers",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-       image: "/banner3.webp",
+        description: "Lorem Ipsum is simply dummy text of the printing. ",
+       image: "/img4.jpg",
         video: "/video.mp4",
     },
     {
         title: "Educational Institutes",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-       image: "/banner1.webp",
+        description: "Lorem Ipsum is simply dummy text of the printing.",
+       image: "/img5.jpg",
         video: "/video.mp4",
     },
 
@@ -82,14 +82,14 @@ const CaseStudy = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
-                    className="heading flex justify-between items-center  text-left mb-14"
+                    className="heading md:flex justify-between items-center  text-left mb-14"
                 >
                    <div className="max-w-[400px]">
-                     <div className="flex gap-2 text-site mb-3 uppercase text-sm md:justify-start">
+                     <div className="flex gap-2 text-site mb-3 uppercase text-sm ">
                         <SignatureIcon width={20} height={20} />
                         Business Projects
                     </div>
-                    <h2 ref={fadeRef} className="mt-3 text-center md:text-left fade-up-stagger text-3xl lg:text-[46px] font-medium mb-1 leading-tight text-site">
+                    <h2 ref={fadeRef} className="mt-3  fade-up-stagger text-3xl lg:text-[46px] font-medium mb-1 leading-tight text-site">
                      Strategic Business Projects for Growth
                     </h2>
                    </div>
@@ -105,7 +105,7 @@ const CaseStudy = () => {
                             onMouseEnter={() => handleMouseEnter(idx)}
                             onMouseLeave={handleMouseLeave}
                         >
-                            <div className="w-full aspect-[1/.7] rounded-md relative overflow-hidden mb-4 flex justify-center items-center bg-gray-100">
+                            <div className="w-full aspect-[1/.8] rounded-2xl relative overflow-hidden mb-4 flex justify-center items-center bg-gray-100">
                                 {playingIdx === idx ? (
                                     <video
                                         ref={el => { videoRefs.current[idx] = el; }}
