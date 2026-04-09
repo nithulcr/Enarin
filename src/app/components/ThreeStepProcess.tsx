@@ -64,7 +64,7 @@ export default function ThreeStepProcess() {
                                 <circle cx="28.7425" cy="29.1165" r="22.3797" fill="white" />
                                 <path d="M21.3978 29.1167H23.2606M33.3197 29.1167L28.849 24.646M33.3197 29.1167L28.849 33.5874M33.3197 29.1167H25.496" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <div className="gradient-text mb-4 text-7xl md:text-9xl font-semibold bg-[linear-gradient(180deg,#000_16%,#00a8ff_88%)] bg-clip-text text-transparent">
+                            <div className=" mb-4 text-7xl md:text-9xl font-semibold text-1">
                                 {step.number}
                             </div>
 

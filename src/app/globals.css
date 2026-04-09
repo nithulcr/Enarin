@@ -135,7 +135,7 @@ h1{
   color: var(--siteColor);
 }
 .text-1{
-  color: var(--color);
+ color: var(--siteColor3);
 }
 .text-2{
   color: #C4C4C4;
