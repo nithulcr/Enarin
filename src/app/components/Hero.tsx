@@ -5,9 +5,7 @@ import AnimatedButton from "./AnimatedButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import type { Swiper as SwiperType } from 'swiper';
-import "swiper/css/effect-fade";
-import "swiper/css";
-import "swiper/css/autoplay";
+import "swiper/swiper-bundle.css";
 import Image from "next/image";
 
 interface SlideContent {
